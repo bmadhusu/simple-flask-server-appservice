@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>About</h1>
+    <p>This is a simple website</p>
+
+    {% if location %}
+   <p>If I'm ever in {{location }} I'd love to say hi</p>
+   {% else %}
+    <p>Drop me a line, let me know where you are!</p>
+   {% endif %}
+{% endblock %}
+
